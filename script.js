@@ -4,7 +4,7 @@ class UserService {
         this._password = password
     }
     data() {
-        return {user: this.username, password: this.password}
+        return {user: this._username, password: this._password}
     }
     authenticate_user() {
         return new Promise((resolve, reject) => {
